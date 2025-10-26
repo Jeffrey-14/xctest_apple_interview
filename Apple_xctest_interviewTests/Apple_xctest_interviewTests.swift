@@ -18,4 +18,8 @@ final class Apple_xctest_interviewTests: XCTestCase {
         let message = "Hello, world!"
         XCTAssertFalse(message.isEmpty, "Message should not be empty")
     }
+    func testStringIsEmpty() {
+        let message = ""
+        XCTAssertTrue(message.isEmpty, "message should be empty")
+    }
 }
